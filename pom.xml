@@ -3,8 +3,8 @@
 
 	<!-- Project settings -->
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>dev.brachtendorf</groupId>
-	<artifactId>JImageHash</artifactId>
+	<groupId>org.ferrym</groupId>
+	<artifactId>JImageHash-java8</artifactId>
 	<version>1.0.0</version>
 
 	<name>Java Image Hash</name>
@@ -13,7 +13,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<javac.target>11</javac.target>
+		<javac.target>8</javac.target>
 	</properties>
 
 	<licenses>
@@ -50,8 +50,8 @@
 
 		<!-- Fast image access methods and overall utility code -->
 		<dependency>
-			<groupId>dev.brachtendorf</groupId>
-			<artifactId>UtilityCode</artifactId>
+			<groupId>org.ferrym</groupId>
+			<artifactId>UtilityCode-java8</artifactId>
 			<version>2.0.1</version>
 		</dependency>
 
@@ -63,7 +63,7 @@
 			<classifier>with-dependencies</classifier>
 		</dependency>
 
-		<!-- Database image matcher dependency. It's large so let user decide if 
+		<!-- Database image matcher dependency. It's large so let user decide if
 			they are using it. -->
 		<dependency>
 			<groupId>com.h2database</groupId>
@@ -72,9 +72,9 @@
 			<optional>true</optional>
 		</dependency>
 
-		<!-- Example dependencies. They are required to compile the library but 
-			won't be needed during execution if non examples are run. Therefore, there 
-			is no need for depended libraries to also depend on those projects. Set the 
+		<!-- Example dependencies. They are required to compile the library but
+			won't be needed during execution if non examples are run. Therefore, there
+			is no need for depended libraries to also depend on those projects. Set the
 			optional tag to true. -->
 
 		<!-- Testing -->
@@ -118,14 +118,14 @@
 				<configuration>
 					<additionalOptions>-html5</additionalOptions>
 				</configuration>
-				<executions>
-					<execution>
-						<id>attach-javadocs</id>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						<id>attach-javadocs</id>-->
+<!--						<goals>-->
+<!--							<goal>jar</goal>-->
+<!--						</goals>-->
+<!--					</execution>-->
+<!--				</executions>-->
 			</plugin>
 			<plugin>
 				<artifactId>maven-source-plugin</artifactId>
